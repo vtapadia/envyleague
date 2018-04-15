@@ -3,7 +3,7 @@ create table nvl_team (
   name varchar2(50)
 );
 
-create table nvl_user (
+create table nvl_player (
   email varchar2(100) primary key,
   name varchar2(100)
 );
@@ -12,6 +12,13 @@ create table nvl_league (
   id Number(5,0) primary key ,
   owner varchar2(100),
   buy_in Number(5,0)
+);
+
+create table league_player(
+  league Number(5,0),
+  player varchar2(100),
+  status varchar2(50),
+  PRIMARY KEY (league, player)
 );
 
 create table nvl_match (
@@ -29,7 +36,7 @@ create table nvl_match (
 create table nvl_prediction (
   id NUMBER(10,0) primary key ,
   league NUMBER(5,0),
-  user varchar2(100),
+  player varchar2(100),
   match NUMBER(5,0),
   team_a_score int ,
   team_b_score int ,

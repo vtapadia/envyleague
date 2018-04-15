@@ -8,9 +8,9 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "nvl_user")
+@Table(name = "nvl_player")
 @Data
-public class NVLUser {
+public class NVLPlayer {
     @Id
     private String email;
     private String name;

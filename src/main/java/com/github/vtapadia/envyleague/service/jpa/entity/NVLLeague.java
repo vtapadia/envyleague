@@ -17,6 +17,6 @@ public class NVLLeague {
     private BigInteger id;
     @ManyToOne
     @JoinColumn(name = "owner")
-    private NVLUser owner;
+    private NVLPlayer owner;
     private BigInteger buyIn;
 }

@@ -22,8 +22,8 @@ public class NVLPrediction {
     @JoinColumn(name = "league")
     private NVLLeague league;
     @ManyToOne
-    @JoinColumn(name = "user")
-    private NVLUser user;
+    @JoinColumn(name = "player")
+    private NVLPlayer player;
     @ManyToOne
     @JoinColumn(name = "match")
     private NVLMatch match;
