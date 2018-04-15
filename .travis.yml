@@ -1,0 +1,15 @@
+sudo: required
+language: java
+jdk:
+- oraclejdk8
+#services:
+#  - docker # required, but travis uses older version of docker :(
+#before_install:
+#  - docker --version  # document the version travis is using
+#  - pip install --user awscli
+#  - export PATH=$PATH:$HOME/.local/bin
+#after_success:
+#  - eval $(aws ecr get-login --no-include-email --region eu-central-1) #needs AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY envvars
+#  - docker tag vtapadia/envyleague-service:latest 369256618572.dkr.ecr.eu-central-1.amazonaws.com/vtapadia/envyleague-service:latest
+#  - docker push 369256618572.dkr.ecr.eu-central-1.amazonaws.com/vtapadia/envyleague-service:latest
+#  - aws ecs update-service --cluster envyleague-service-cluster --service envyleague-service-service --force-new-deployment
