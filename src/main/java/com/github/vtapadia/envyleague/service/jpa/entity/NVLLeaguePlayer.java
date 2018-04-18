@@ -11,11 +11,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "league_player")
+@Table(name = "nvl_league_player")
 @Data
-public class LeaguePlayer {
+public class NVLLeaguePlayer {
     @Id
-    LeaguePlayerKey leaguePlayerKey;
+    NVLLeaguePlayerKey NVLLeaguePlayerKey;
     @Enumerated(EnumType.STRING)
     Status status;
 }

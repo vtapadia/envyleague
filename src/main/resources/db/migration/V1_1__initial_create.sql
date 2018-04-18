@@ -10,11 +10,12 @@ create table nvl_player (
 
 create table nvl_league (
   id Number(5,0) primary key ,
+  name varchar2(100),
   owner varchar2(100),
   buy_in Number(5,0)
 );
 
-create table league_player(
+create table nvl_league_player (
   league Number(5,0),
   player varchar2(100),
   status varchar2(50),
@@ -34,7 +35,6 @@ create table nvl_match (
 );
 
 create table nvl_prediction (
-  id NUMBER(10,0) primary key ,
   league NUMBER(5,0),
   player varchar2(100),
   match NUMBER(5,0),
@@ -42,6 +42,7 @@ create table nvl_prediction (
   team_b_score int ,
   created timestamp,
   updated timestamp,
-  score int
+  score int,
+  PRIMARY KEY (league, player, match)
 );
 

@@ -10,7 +10,7 @@ import java.io.Serializable;
 
 
 @Embeddable
-public class LeaguePlayerKey implements Serializable {
+public class NVLLeaguePlayerKey implements Serializable {
     @ManyToOne
     @JoinColumn(name = "league")
     NVLLeague league;
