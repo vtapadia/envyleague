@@ -1,5 +1,5 @@
 create table nvl_team (
-  id Number(5,0) primary key ,
+  code varchar2(2) primary key,
   name varchar2(50)
 );
 
@@ -23,8 +23,8 @@ create table league_player(
 
 create table nvl_match (
   id NUMBER(5,0) primary key ,
-  team_a NUMBER(5,0),
-  team_b NUMBER(5,0),
+  team_a varchar2(2),
+  team_b varchar2(2),
   match_date_time timestamp,
   match_stage varchar2(50),
   team_a_score int ,

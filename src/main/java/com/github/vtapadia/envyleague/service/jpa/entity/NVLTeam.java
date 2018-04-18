@@ -9,6 +9,6 @@ import java.math.BigInteger;
 @Table(name = "nvl_team")
 public class NVLTeam {
     @Id
-    public BigInteger id;
+    public String code;
     public String name;
 }
